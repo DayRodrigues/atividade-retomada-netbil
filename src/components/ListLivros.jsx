@@ -2,7 +2,7 @@ import { Flex, Box, Text, Button, Icon, Image, SimpleGrid, Grid } from '@chakra-
 import { DownloadIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
 
-{/* Array de livros com informações como tipo, ano, descrição, capa e cores para estilização */}
+{/* No Array, a lista de livros traz o objeto com a informação do tipo, ano, descrição, capa e cores da estilização */}
 const livros = [
   {
     tipo: 'Professor',
@@ -119,7 +119,7 @@ const livros = [
   const [activeIndex, setActiveIndex] = useState({});
   const bimestres = [1, 2, 3, 4];
 
-  {/* Filtra os livros e o ano conforme o filtro selecionado */}
+  {/* Filtra os livros e o ano conforme o filtro selecionado, retornando apenas o que cumprrem os dois*/}
   const livrosFiltrados = livros.filter(livro => {
     const anoOk = !anoFiltro || livro.ano === anoFiltro.replace('-ano', 'º ANO');
     const tipoOk = tipoFiltro === 'todos' || livro.tipo.toLowerCase() === tipoFiltro.toLowerCase();

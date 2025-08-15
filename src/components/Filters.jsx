@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import { Select, Button, Text, Flex, RadioGroup, Radio, Stack, SimpleGrid } from '@chakra-ui/react';
 
-{/* Filtro da seleção do Tipo e do Ano*/}
+{/*Ao clicar ele limpa, as seleções*/}
   const Filters = ({ ano, setAno, tipo, setTipo }) => {
   const handleClear = () => {
     setAno('');
     setTipo('todos');
     console.log("Função de limpar filtro")
 };
-
   const handleAnoChange = (e) => {
     setAno(e.target.value);
     console.log("Selecionei o livro pelo ano", e.target.value);
 };
-
   const handleTipoChange = (value) => {
     setTipo(value);
     console.log("Selecionei o livro pelo tipo", value);
