@@ -8,7 +8,7 @@ const livros = [
     tipo: 'Professor',
     ano: '1º ANO',
     descricao: 'Materiais que facilitam a prática docente com foco no desenvolvimento integral.',
-    capa: './images/ativa_mente_1_aluno.png',
+    capa: './images/ativa_mente_1_professor.png',
     corAno: 'linear-gradient(101.32deg, #4091A7 3.64%, #1DB37F 112.95%)',
     corTipo: '#FF6A2A',
     corFundo: 'linear-gradient(135deg, #DFF3F7 0%, #ffffff 100%)', // baseado no corBotao #4091A7
@@ -30,7 +30,7 @@ const livros = [
     tipo: 'Professor',
     ano: '2º ANO',
     descricao: 'Recursos que fortalecem a prática e as aprendizagens.',
-    capa: './images/ativa_mente_2_aluno.png',
+    capa: './images/ativa_mente_2_professor.png',
     corAno: 'linear-gradient(101.32deg, #1DB37F 3.64%, #8DAC02 112.95%)',
     corTipo: '#FF6A2A',
     corFundo: 'linear-gradient(135deg, #D1F0E0 0%, #ffffff 100%)', // baseado no corBotao #1DB37F
@@ -52,7 +52,7 @@ const livros = [
     tipo: 'Professor',
     ano: '3º ANO',
     descricao: 'Planejamentos que enriquecem as experiências de ensino.',
-    capa: './images/ativa_mente_3_aluno.png',
+    capa: './images/ativa_mente_3_professor.png',
     corAno: 'linear-gradient(101.32deg, #525FBC 3.64%, #A252BC 112.95%)',
     corTipo: '#FF6A2A',
     corFundo: 'linear-gradient(135deg, #E3E5F4 0%, #ffffff 100%)',
@@ -74,7 +74,7 @@ const livros = [
     tipo: 'Professor',
     ano: '4º ANO',
     descricao: 'Conteúdos estruturados para promover o engajamento e a evolução da turma.',
-    capa: './images/ativa_mente_4_aluno.png',
+    capa: './images/ativa_mente_4_professor.png',
     corAno: 'linear-gradient(101.32deg, #A96241 3.64%, #9B2BAD 112.95%)',
     corTipo: '#FF6A2A',
     corFundo: 'linear-gradient(135deg, #F3E5F8 0%, #ffffff 100%)', // baseado no corBotao #A96241
@@ -96,7 +96,7 @@ const livros = [
     tipo: 'Professor',
     ano: '5º ANO',
     descricao: 'Apoio pedagógico para potencializar o ensino com intencionalidade e didática.',
-    capa: './images/ativa_mente_5_aluno.png',
+    capa: './images/ativa_mente_5_professor.png',
     corAno: 'linear-gradient(101.32deg, #84963B 3.64%, #3B9696 112.95%)',
     corTipo: '#FF6A2A',
     corFundo: 'linear-gradient(135deg, #E8F0D8 0%, #ffffff 100%)', // baseado no corBotao #84963B
@@ -127,7 +127,7 @@ const livros = [
   });
   return (
     <SimpleGrid columns={[1, null, 2]} spacing="30px">
-      {livros.map((livro, i) => (
+      {livrosFiltrados.map((livro, i) => (
         <Flex
           key={i}
           align="center"
