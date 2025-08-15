@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #6a0dad;
+  padding: 20px;
+}
+
+.logo-netbil img {
+  height: 50px;
+}
+
+.faixa-roxa {
+  display: flex;
+  align-items: center;
+  background-color: #8a2be2;
+}
+
+.faixa-roxa h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+.filtro-container {
+  margin-bottom: 20px;
+}
+
+.filtro-container label {
+  margin-right: 10px;
+}
+
+.radio-group {
+  margin: 20px 0;
+}
+
+.livro {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.livro img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tipo,
+.serie,
+.descricao {
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
